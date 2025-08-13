@@ -6,11 +6,11 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'norcalli/nvim-colorizer.lua'
 
 " status bar
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'maximbaz/lightline-ale'
+Plug 'itchyny/lightline.vim'
 
 " Themes
-Plug 'tomasiser/vim-code-dark'
+Plug 'sheerun/vim-wombat-scheme'
 
 " Tree
 Plug 'scrooloose/nerdtree'
@@ -18,6 +18,7 @@ Plug 'scrooloose/nerdtree'
 " typing
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
+Plug 'AndrewRadev/tagalong.vim'
 
 " tmux
 Plug 'benmills/vimux'

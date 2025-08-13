@@ -1,32 +1,33 @@
 " HTML, JSX
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
 " Lightlane
-"let g:lightline = {
-      "\ 'active': {
-      "\   'left': [['mode', 'paste'], [], ['relativepath', 'modified']],
-      "\   'right': [['kitestatus'], ['filetype', 'percent', 'lineinfo'], ['gitbranch']]
-      "\ },
-      "\ 'inactive': {
-      "\   'left': [['inactive'], ['relativepath']],
-      "\   'right': [['bufnum']]
-      "\ },
-      "\ 'component': {
-      "\   'bufnum': '%n',
-      "\   'inactive': 'inactive'
-      "\ },
-      "\ 'component_function': {
-      "\   'gitbranch': 'fugitive#head',
-      "\   'kitestatus': 'kite#statusline'
-      "\ },
-      "\ 'colorscheme': 'gruvbox',
-      "\ 'subseparator': {
-      "\   'left': '',
-      "\   'right': ''
-      "\ }
-      "\}
-"airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:lightline = {
+      \ 'active': {
+      \   'left': [['mode', 'paste'], [], ['relativepath', 'modified']],
+      \   'right': [['kitestatus'], ['filetype', 'percent', 'lineinfo'], ['gitbranch']]
+      \ },
+      \ 'inactive': {
+      \   'left': [['inactive'], ['relativepath']],
+      \   'right': [['bufnum']]
+      \ },
+      \ 'component': {
+      \   'bufnum': '%n',
+      \   'inactive': 'inactive'
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'fugitive#head',
+      \   'kitestatus': 'kite#statusline'
+      \ },
+      \ 'colorscheme': 'wombat',
+      \ 'subseparator': {
+      \   'left': '',
+      \   'right': ''
+      \ }
+      \}
+
+"rename tag
+let g:tagalong_filetypes = ['html', 'htmldjango' , 'javascript', 'jsx', 'typescript', 'typescripreact', 'javascriptreact']
+let g:tagalong_verbose = 1
 
 "  nerdtree
 let NERDTreeShowHidden=1

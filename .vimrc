@@ -15,7 +15,7 @@ so ~/.vim/plugins.vim
 so ~/.vim/plugin-config.vim
 so ~/.vim/maps.vim
 
-colorscheme codedark
+colorscheme wombat
 "set background=dark
 "let g:gruvbox_contrast_dark = "hard"
 highlight Normal ctermbg=NONE
@@ -32,3 +32,8 @@ set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+augroup filetype_django
+  autocmd!
+  autocmd BufNewFile,BufRead *.html if findfile('manage.py', '.;') != '' | set filetype=htmldjango | endif
+augroup END

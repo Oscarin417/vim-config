@@ -12,11 +12,11 @@ nnoremap <Leader>< 10<C-w><
 " quick semi
 nnoremap <Leader>; $a;<Esc>
 
-nnoremap <Leader>w :w<CR>
+nnoremap <C-s> :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>Q :q!<CR>
-nnoremap <Tab> :bnext<CR>
-nnoremap <S-Tab> :bprev<CR>
+nnoremap <S-l> :bnext<CR>
+nnoremap <S-h> :bprev<CR>
 nnoremap <Leader>x :bd<CR>
 " shorter commands
 cnoreabbrev tree NERDTreeToggle
