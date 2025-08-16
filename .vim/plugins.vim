@@ -10,7 +10,8 @@ Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
 
 " Themes
-Plug 'sheerun/vim-wombat-scheme'
+Plug 'morhetz/gruvbox'
+Plug 'shinchu/lightline-gruvbox.vim'
 
 " Tree
 Plug 'scrooloose/nerdtree'
