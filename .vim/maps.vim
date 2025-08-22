@@ -26,8 +26,8 @@ cnoreabbrev diff Gdiff
 
 " plugs
 map <Leader>e :NERDTreeFind<CR>
-map <Leader>ff :Files<CR>
-map <Leader>fw :Ag<CR>
+map <Leader>p :Files<CR>
+map <Leader>f :Ag<CR>
 
 " tmux navigator
 nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
